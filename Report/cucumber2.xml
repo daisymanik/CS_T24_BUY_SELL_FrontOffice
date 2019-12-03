@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="581.390828">
+<testcase classname="Login into T24 and create a buy order" name="Login to the application with user one" time="23.363325">
+<system-out><![CDATA[Given The user is able to login with valid "username" and with valid "password".passed
+Then Click on login button..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login into T24 and create a buy order" name="Create a new order with user one" time="139.254453">
+<system-out><![CDATA[Given The user is in the new order creation window..........................passed
+When Fill the fields required to complete the sell order in front office....passed
+And Validate the entered fields in front office.............................passed
+Then Commit the front office order and logout...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login into T24 and create a buy order" name="Approve the order with user two" time="53.86033">
+<system-out><![CDATA[Given The user is logged and in the approval window of front office.........passed
+When The transaction number is passed in the commandline as one of the parameters.passed
+Then Execute the front office order.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login into T24 and create a buy order" name="Broker details are entered" time="93.781901">
+<system-out><![CDATA[Given The user is in Middle office page.....................................passed
+When The middle office orders parameters are passed in the command line.....passed
+And Fill the fields for completing the order in middle office...............passed
+And Validate the entered fields in middle office............................passed
+Then Commit the middle office order and logout..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login into T24 and create a buy order" name="Approve the order with user two" time="85.697231">
+<system-out><![CDATA[Given The user is logged in the approval window of middle office............passed
+When The middle office order number is passed in the commandline as one of the parameters.passed
+Then Execute the order middle office order..................................passed
+And Fetch the securities transaction number.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login into T24 and create a buy order" name="Approve the order with user two" time="185.433588">
+<system-out><![CDATA[Given The user is logged in the back office page............................passed
+When The back office order number is passed in the commandline as one of the parameters.passed
+And Choose the cash hold and security hold status...........................passed
+And Execute the back office order...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
